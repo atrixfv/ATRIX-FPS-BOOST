@@ -393,3 +393,166 @@ namespace ATRIXFPSBooster
         }
     }
 }
+namespace ATRIXFPSBooster
+{
+    partial class MainForm
+    {
+        private System.ComponentModel.IContainer components = null;
+
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        private void InitializeComponent()
+        {
+            this.btnBoostFPS = new System.Windows.Forms.Button();
+            this.progressBar = new System.Windows.Forms.ProgressBar();
+            this.lblStatus = new System.Windows.Forms.Label();
+            this.lblSystemInfo = new System.Windows.Forms.Label();
+            this.btnRestore = new System.Windows.Forms.Button();
+            this.btnGameLauncher = new System.Windows.Forms.Button();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.groupBox1.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.SuspendLayout();
+            // 
+            // btnBoostFPS
+            // 
+            this.btnBoostFPS.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.btnBoostFPS.Font = new System.Drawing.Font("Arial", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnBoostFPS.ForeColor = System.Drawing.Color.White;
+            this.btnBoostFPS.Location = new System.Drawing.Point(6, 19);
+            this.btnBoostFPS.Name = "btnBoostFPS";
+            this.btnBoostFPS.Size = new System.Drawing.Size(200, 60);
+            this.btnBoostFPS.TabIndex = 0;
+            this.btnBoostFPS.Text = "BOOST FPS NOW!";
+            this.btnBoostFPS.UseVisualStyleBackColor = false;
+            this.btnBoostFPS.Click += new System.EventHandler(this.btnBoostFPS_Click);
+            // 
+            // progressBar
+            // 
+            this.progressBar.Location = new System.Drawing.Point(12, 200);
+            this.progressBar.Name = "progressBar";
+            this.progressBar.Size = new System.Drawing.Size(400, 23);
+            this.progressBar.TabIndex = 1;
+            // 
+            // lblStatus
+            // 
+            this.lblStatus.AutoSize = true;
+            this.lblStatus.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblStatus.Location = new System.Drawing.Point(12, 180);
+            this.lblStatus.Name = "lblStatus";
+            this.lblStatus.Size = new System.Drawing.Size(45, 16);
+            this.lblStatus.TabIndex = 2;
+            this.lblStatus.Text = "Ready";
+            // 
+            // lblSystemInfo
+            // 
+            this.lblSystemInfo.AutoSize = true;
+            this.lblSystemInfo.Font = new System.Drawing.Font("Arial", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSystemInfo.Location = new System.Drawing.Point(6, 19);
+            this.lblSystemInfo.Name = "lblSystemInfo";
+            this.lblSystemInfo.Size = new System.Drawing.Size(90, 15);
+            this.lblSystemInfo.TabIndex = 3;
+            this.lblSystemInfo.Text = "System: Loading...";
+            // 
+            // btnRestore
+            // 
+            this.btnRestore.BackColor = System.Drawing.Color.Orange;
+            this.btnRestore.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnRestore.ForeColor = System.Drawing.Color.White;
+            this.btnRestore.Location = new System.Drawing.Point(230, 19);
+            this.btnRestore.Name = "btnRestore";
+            this.btnRestore.Size = new System.Drawing.Size(75, 60);
+            this.btnRestore.TabIndex = 4;
+            this.btnRestore.Text = "Restore Defaults";
+            this.btnRestore.UseVisualStyleBackColor = false;
+            this.btnRestore.Click += new System.EventHandler(this.btnRestore_Click);
+            // 
+            // btnGameLauncher
+            // 
+            this.btnGameLauncher.BackColor = System.Drawing.Color.Purple;
+            this.btnGameLauncher.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnGameLauncher.ForeColor = System.Drawing.Color.White;
+            this.btnGameLauncher.Location = new System.Drawing.Point(320, 19);
+            this.btnGameLauncher.Name = "btnGameLauncher";
+            this.btnGameLauncher.Size = new System.Drawing.Size(75, 60);
+            this.btnGameLauncher.TabIndex = 5;
+            this.btnGameLauncher.Text = "Game Launchers";
+            this.btnGameLauncher.UseVisualStyleBackColor = false;
+            this.btnGameLauncher.Click += new System.EventHandler(this.btnGameLauncher_Click);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.btnBoostFPS);
+            this.groupBox1.Controls.Add(this.btnRestore);
+            this.groupBox1.Controls.Add(this.btnGameLauncher);
+            this.groupBox1.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(400, 90);
+            this.groupBox1.TabIndex = 6;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Optimization Controls";
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.lblSystemInfo);
+            this.groupBox2.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox2.Location = new System.Drawing.Point(12, 110);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(400, 60);
+            this.groupBox2.TabIndex = 7;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "System Information";
+            // 
+            // MainForm
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Black;
+            this.ClientSize = new System.Drawing.Size(424, 241);
+            this.Controls.Add(this.groupBox2);
+            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.lblStatus);
+            this.Controls.Add(this.progressBar);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = System.Drawing.SystemIcons.WinLogo;
+            this.MaximizeBox = false;
+            this.Name = "MainForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "ATRIX FPS BOOSTER v1.0 - Gaming Optimization Tool";
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+        }
+
+        private System.Windows.Forms.Button btnBoostFPS;
+        private System.Windows.Forms.ProgressBar progressBar;
+        private System.Windows.Forms.Label lblStatus;
+        private System.Windows.Forms.Label lblSystemInfo;
+        private System.Windows.Forms.Button btnRestore;
+        private System.Windows.Forms.Button btnGameLauncher;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox groupBox2;
+    }
+}
+using System;
+using System.Windows.Forms;
+
+namespace ATRIXFPSBooster
+{
+    static class Program
+    {
+        [STAThread]
+        static void Main()
+        {
+            Application.EnableVisualStyle
